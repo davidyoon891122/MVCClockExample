@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1E837127D5743B00B62306 /* DateTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E837027D5743B00B62306 /* DateTimeModel.swift */; };
 		AD6B276E27D1EEC200AB52C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B276D27D1EEC200AB52C9 /* AppDelegate.swift */; };
 		AD6B277027D1EEC200AB52C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B276F27D1EEC200AB52C9 /* SceneDelegate.swift */; };
 		AD6B277227D1EEC200AB52C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B277127D1EEC200AB52C9 /* ViewController.swift */; };
-		AD6B277527D1EEC200AB52C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6B277327D1EEC200AB52C9 /* Main.storyboard */; };
 		AD6B277727D1EEC500AB52C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6B277627D1EEC500AB52C9 /* Assets.xcassets */; };
 		AD6B277A27D1EEC500AB52C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6B277827D1EEC500AB52C9 /* LaunchScreen.storyboard */; };
+		AD6B278327D1EF6100AB52C9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD6B278227D1EF6100AB52C9 /* SnapKit */; };
+		AD6B278527D1F6C100AB52C9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B278427D1F6C100AB52C9 /* NetworkManager.swift */; };
+		AD6B278827D1F72F00AB52C9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AD6B278727D1F72F00AB52C9 /* Alamofire */; };
+		AD6B278A27D1F90F00AB52C9 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B278927D1F90F00AB52C9 /* TimeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD1E837027D5743B00B62306 /* DateTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeModel.swift; sourceTree = "<group>"; };
 		AD6B276A27D1EEC200AB52C9 /* WorldClockMVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldClockMVVMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6B276D27D1EEC200AB52C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6B276F27D1EEC200AB52C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD6B277127D1EEC200AB52C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD6B277427D1EEC200AB52C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD6B277627D1EEC500AB52C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD6B277927D1EEC500AB52C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD6B277B27D1EEC500AB52C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6B278427D1F6C100AB52C9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AD6B278927D1F90F00AB52C9 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6B278327D1EF6100AB52C9 /* SnapKit in Frameworks */,
+				AD6B278827D1F72F00AB52C9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +67,12 @@
 				AD6B276D27D1EEC200AB52C9 /* AppDelegate.swift */,
 				AD6B276F27D1EEC200AB52C9 /* SceneDelegate.swift */,
 				AD6B277127D1EEC200AB52C9 /* ViewController.swift */,
-				AD6B277327D1EEC200AB52C9 /* Main.storyboard */,
 				AD6B277627D1EEC500AB52C9 /* Assets.xcassets */,
 				AD6B277827D1EEC500AB52C9 /* LaunchScreen.storyboard */,
 				AD6B277B27D1EEC500AB52C9 /* Info.plist */,
+				AD6B278427D1F6C100AB52C9 /* NetworkManager.swift */,
+				AD6B278927D1F90F00AB52C9 /* TimeModel.swift */,
+				AD1E837027D5743B00B62306 /* DateTimeModel.swift */,
 			);
 			path = WorldClockMVVMExample;
 			sourceTree = "<group>";
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = WorldClockMVVMExample;
+			packageProductDependencies = (
+				AD6B278227D1EF6100AB52C9 /* SnapKit */,
+				AD6B278727D1F72F00AB52C9 /* Alamofire */,
+			);
 			productName = WorldClockMVVMExample;
 			productReference = AD6B276A27D1EEC200AB52C9 /* WorldClockMVVMExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = AD6B276127D1EEC200AB52C9;
+			packageReferences = (
+				AD6B278127D1EF6100AB52C9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AD6B278627D1F72F00AB52C9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AD6B276B27D1EEC200AB52C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +145,6 @@
 			files = (
 				AD6B277A27D1EEC500AB52C9 /* LaunchScreen.storyboard in Resources */,
 				AD6B277727D1EEC500AB52C9 /* Assets.xcassets in Resources */,
-				AD6B277527D1EEC200AB52C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +155,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1E837127D5743B00B62306 /* DateTimeModel.swift in Sources */,
+				AD6B278527D1F6C100AB52C9 /* NetworkManager.swift in Sources */,
 				AD6B277227D1EEC200AB52C9 /* ViewController.swift in Sources */,
 				AD6B276E27D1EEC200AB52C9 /* AppDelegate.swift in Sources */,
 				AD6B277027D1EEC200AB52C9 /* SceneDelegate.swift in Sources */,
+				AD6B278A27D1F90F00AB52C9 /* TimeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AD6B277327D1EEC200AB52C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD6B277427D1EEC200AB52C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD6B277827D1EEC500AB52C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +306,7 @@
 				INFOPLIST_FILE = WorldClockMVVMExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +334,7 @@
 				INFOPLIST_FILE = WorldClockMVVMExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +372,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD6B278127D1EF6100AB52C9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		AD6B278627D1F72F00AB52C9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD6B278227D1EF6100AB52C9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD6B278127D1EF6100AB52C9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AD6B278727D1F72F00AB52C9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD6B278627D1F72F00AB52C9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD6B276227D1EEC200AB52C9 /* Project object */;
 }
